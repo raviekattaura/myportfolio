@@ -1,0 +1,76 @@
+/* set all html elements with border-box sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+main {
+  margin-top: 0;
+}
+
+main h1 {
+  margin: 0 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 65px;
+}
+
+main h2 {
+  margin: 18px 0 12px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+main h3 {
+  margin: 18px 0 12px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif cursive;
+  margin-top: 0;
+}
+
+.group img {
+  width: 100%;
+}
+
+.bg-primary {
+  background-color: #775f47;
+}
+
+/* Groups and Items - Mobile First */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin: auto;
+  border: 2px solid;
+  background-color: bisque;
+  
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/*  Groups and Items on Desktop  */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
