@@ -22,48 +22,59 @@ main {
 main h1 {
   margin: 0 10px;
   text-align: center;
-  font-size: 65px;
+  font-size: 85px;
   text-emphasis: wrap;
 }
 
 main h2 h4 {
   margin: 18px 0 12px 0;
-  font-size: 24px;
+  font-size: 65px;
   text-align: center;
 }
 
 main h3 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 main p {
   margin-top: 0;
+  font-size: 30px;
+  text-align: left;
 }
 
-footer img {
-  width: 2px;
-}
 
 .bg-primary {
   background-color: #775f47; 
 }
 
+footer h6 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
 /* Groups and Items - Mobile First */
 
+.header-image{
+  width: 400px;
+  border-radius: 5%;
+}
 
 .group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin: auto;
   border: 2px solid;
   background-color: bisque;
 }
 
+/*
 .group img {
   width: 100%;
   border-radius: 5%
 }
+*/
 
 .item {
   flex: 1;
@@ -73,6 +84,19 @@ footer img {
 
 .item-double {
   flex: 2;
+}
+
+.project-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
 }
 
 
