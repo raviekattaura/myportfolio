@@ -161,6 +161,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: black;
 }
 
 footer h3 {
@@ -194,7 +195,7 @@ footer form input[type=text] {
 
 footer form textarea {
   height: 8rem;
-  width: 600px;
+  width: 90%;
   color: darkblue;
   font-size: 16px;
   margin-bottom: 25px;
