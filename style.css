@@ -7,14 +7,31 @@
 /* General Styles */
 
 header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: black;
   text-align: center;
-  text-color: bisque;
+  color: bisque;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+header h2 {
+  font-size: 40px;
+}
+
+header h4 {
+  font-size: 30px;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   font-family: Arial, Helvitica, sans-serif;
-  /* background-color:  #775f47; */
   background-color: bisque;
   text-align: center;
 }
@@ -22,14 +39,21 @@ main {
 main h1 {
   margin: 0 10px;
   text-align: center;
-  font-size: 85px;
+  font-size: 75px;
   text-emphasis: wrap;
 }
 
 main h2 h4 {
   margin: 18px 0 12px 0;
-  font-size: 65px;
   text-align: center;
+}
+
+main h2 {
+  font-size: 50px;
+}
+
+main h4 {
+  font-size: 30px;
 }
 
 main h3 {
@@ -47,6 +71,7 @@ main p {
   background-color: #775f47; 
 }
 
+
 footer h6 {
   font-size: 20px;
   text-align: center;
@@ -55,9 +80,52 @@ footer h6 {
 
 /* Groups and Items - Mobile First */
 
+.header-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-item {
+  flex: 1;
+}
+
+.header-item-double {
+  flex: 2;
+}
+
+.header-text {
+  display: flex;
+  background-color: pink;
+}
+
 .header-image{
-  width: 400px;
+  width: 100%;
   border-radius: 5%;
+}
+
+.main-group {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.main-item {
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+  background-color: bisque;
+  margin: 5px;
+  padding: 10px;
+}
+
+.main-item-double {
+  flex: 2;
+}
+
+.main-item-triple {
+  flex: 3;
 }
 
 .group {
@@ -88,26 +156,37 @@ footer h6 {
   margin-top: 25px;;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
+footer h3 {
+  font-size: 40px;
+  color: bisque;
+  text-align: center;
+}
 
 footer form {
   border: 5px;
   border-color: #000;
   border-radius: 15%;
   text-align: left;
+  
 }
 
 footer form label {
   display: block;  
-  font-size: 25px;
+  font-size: 35px;
   margin-bottom: 5px;
-  color: darkred;
+  color: bisque;
   font-family: Arial, Helvetica, sans-serifrial;
 }
 
 footer form input[type=text] {
   color: #000;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 25px;
   height: 2rem;
 }
@@ -121,9 +200,9 @@ footer form textarea {
 
 }
 
-footer .group .item .item-double {
+footer .footer-group .footer-item .footer-item-triple {
   display: block;
-  justify-content: left;
+  justify-content: flex-start;
   border: 5px;
   font-weight: bold;
 }
@@ -131,7 +210,7 @@ footer .group .item .item-double {
 footer button {
   display: block;
   justify-content: left;
-  font-size: 25px;
+  font-size: 35px;
   color: darkblue;
 }
 
@@ -144,6 +223,21 @@ footer button {
   justify-content: right;
 }
 
+.footer-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.footer-item {
+  flex: 1;
+}
+
+.footer-item-triple {
+  flex: 3;
+}
+
 
 
 
@@ -153,8 +247,20 @@ footer button {
   section {
     padding: 0 2%;
   }
-  .group {
+  .header-group {
     flex-direction: row;
+  }
+
+  .main-group {
+    flex-direction: row;
+  }
+
+  .footer-group {
+    flex-direction: row;
+  }
+
+  footer form {
+    padding-left: 40px;
   }
 }
 
